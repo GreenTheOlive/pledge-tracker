@@ -53,6 +53,9 @@ def view_pledges():
     return render_template("pledge/view_pledges.html", pledges=pledges)
 
 
-@bp.route("/new-page")
+@bp.route("/new_page")
 def new_page():
     return render_template("pledge/new.html")
+
+def community_page():
+    return render_template("pledge/community.html")
